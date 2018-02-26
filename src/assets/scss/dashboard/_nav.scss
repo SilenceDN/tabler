@@ -1,3 +1,32 @@
+.navbar {
+	line-height: 1;
+}
+
+.nav-link {
+	color: inherit;
+	width: 100%;
+	transition: .3s color;
+
+	&:not(.disabled):hover {
+		color: $body-color;
+	}
+
+	&.disabled {
+		opacity: .25;
+		cursor: default;
+	}
+}
+
+.nav-item {
+	display: flex;
+	align-items: center;
+	min-height: 2.25rem;
+
+	&.dropdown {
+		display: flex;
+	}
+}
+
 .nav-tabs {
 	user-select: none;
 
@@ -82,9 +111,4 @@
 			}
 		}
 	}
-}
-
-.nav-link {
-	display: block;
-	padding: 0.25rem 0.75rem;
 }

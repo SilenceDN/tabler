@@ -1,6 +1,7 @@
 .header {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	color: $text-muted;
+	//padding-top: 1rem;
+	//padding-bottom: 1rem;
 	//height: $header-height;
 	background: #fff;
 	border-bottom: 1px solid $border-color;
@@ -15,30 +16,6 @@
 
 	@media print {
 		display: none;
-	}
-
-	.nav-link,
-	.nav-item {
-		padding: 0 .75rem;
-		min-width: 2rem;
-		transition: .3s color;
-		user-select: none;
-		cursor: pointer;
-		line-height: 1;
-		display: flex;
-		align-items: center;
-
-		&:hover {
-			//color: $body-color !important;
-		}
-
-		.badge {
-			position: absolute;
-			top: 0;
-			right: 0;
-			padding: .2rem .25rem;
-			min-width: 1rem
-		}
 	}
 }
 
@@ -73,7 +50,6 @@
 	height: 2rem;
 	line-height: 2rem;
 	vertical-align: bottom;
-	margin-right: .5rem;
 	width: auto;
 }
 
